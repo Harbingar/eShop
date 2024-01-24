@@ -25,7 +25,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="w-full rounded-tl-topLeft rounded-tr-topRight rounded-bl-botLeft rounded-br-botRight overflow-hidden">
+      <div className="w-full rounded-tl-150 rounded-tr-300 rounded-bl-300 rounded-br-150 overflow-hidden">
         <div className="flex transition-transform duration-1000" style={slideStyles}>
           {images.map((image, index) => (
             <img
