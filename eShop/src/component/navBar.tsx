@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center mx-5">
-          <p className="text-gray-200 text-xl pb-[-2]">3</p>
+          <p className="text-gray-200 text-xl pb-[-2]">0</p>
           <img className="w-8" src="./panier.png" alt="panier" />
         </div>
       </div>
