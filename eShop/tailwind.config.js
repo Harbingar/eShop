@@ -5,7 +5,16 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'custom': ['Lobster', 'sans-serif'],
+      },
+      colors: {
+        bestGreen: '#52673D',
+        bestWhite: '#CACACA',
+        bestBlack: '#0B0B0B',
+      },
+    },
   },
   plugins: [],
 }
