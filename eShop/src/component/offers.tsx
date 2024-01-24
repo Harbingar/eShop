@@ -24,7 +24,7 @@ const offers: React.FC = () => {
   return (
 
     <>
-    <div className="flex flex-row w-full h-full">
+    <div className="flex flex-row w-full h-full justify-center">
       <div className="w-3/5 h-full">
         {offersData.map((offer, index) => (
           <Offer
@@ -35,10 +35,10 @@ const offers: React.FC = () => {
           />
         ))}
       </div>
-      <div className="w-2/5 flex flex-col items-center">
-        <img className="w-1/2" src="./visitOurOffer.png" alt="OurOffers" />
-        <img className="w-1/2 rounded-tl-75 rounded-tr-300 rounded-bl-150 rounded-br-50 py-3" src="./add-img-01.jpg" alt="OurOffers" />
-        <img className="w-1/2 rounded-tl-100 rounded-tr-75 rounded-bl-300 rounded-br-150" src="./add-img-02.jpg" alt="OurOffers" />
+      <div className="w-1/4 flex flex-col items-start">
+        <img className="w-3/4" src="./visitOurOffer.png" alt="OurOffers" />
+        <img className="w-3/4 rounded-tl-75 rounded-tr-300 rounded-bl-150 rounded-br-50 py-3" src="./add-img-01.jpg" alt="OurOffers" />
+        <img className="w-3/4 rounded-tl-100 rounded-tr-75 rounded-bl-300 rounded-br-150" src="./add-img-02.jpg" alt="OurOffers" />
       </div>
     </div>
     </>
