@@ -6,6 +6,7 @@
 body{
     background-color:#1C1C1C;
     font-family: 'Lobster', sans-serif;
+    overflow-x: hidden;
 }
 footer{
     background-color:#0B0B0B;
