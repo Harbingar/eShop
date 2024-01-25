@@ -22,7 +22,7 @@ function App() {
     <Hr/>
     <BlogSection/>
     <Hr/>
-    <ShopSearch/>
+    {/*<ShopSearch/> */}
     <ProductCart/>
     <Footer/>
     </>
