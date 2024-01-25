@@ -12,7 +12,8 @@ module.exports = {
       colors: {
         bestGreen: '#52673D',
         bestWhite: '#CACACA',
-        bestBlack: '#0B0B0B',
+        bestBlack: '#1C1C1C',
+        bestDark: '#0B0B0B',
       },
       borderRadius: {
         'none': '0',

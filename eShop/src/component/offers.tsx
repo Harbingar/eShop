@@ -37,7 +37,7 @@ const offers: React.FC = () => {
       </div>
       <div className="w-1/4 flex flex-col items-start">
         <img className="w-3/4" src="./visitOurOffer.png" alt="OurOffers" />
-        <img className="w-3/4 rounded-tl-75 rounded-tr-300 rounded-bl-150 rounded-br-50 py-3" src="./add-img-01.jpg" alt="OurOffers" />
+        <img className="w-3/4 rounded-tl-75 rounded-tr-300 rounded-bl-150 rounded-br-75 py-3" src="./add-img-01.jpg" alt="OurOffers" />
         <img className="w-3/4 rounded-tl-100 rounded-tr-75 rounded-bl-300 rounded-br-150" src="./add-img-02.jpg" alt="OurOffers" />
       </div>
     </div>

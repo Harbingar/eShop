@@ -4,6 +4,8 @@ import Footer from "./component/footer";
 import Welcome from "./component/welcome";
 import Hr from "./component/hr";
 import Offers from "./component/offers";
+import TopBest from "./component/topBest";
+import BlogSection from "./component/blogSection";
 
 function App() {
 
@@ -14,6 +16,9 @@ function App() {
     <Hr/>
     <Offers/>
     <Hr/>
+    <TopBest />
+    <Hr/>
+    <BlogSection/>
     <Footer/>
     </>
   )

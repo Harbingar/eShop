@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
 
   return (
     <div className="w-full h-24 flex flex-row justify-between items-center">
-      <img src="./logoTitre.png" alt="logo" className="w-32" />
+      <img src="./logoTitre.png" alt="logo" className="w-36" />
       <div className="flex flex-row">
         <div className="flex flex-row">
           <div className="flex flex-col justify-center">
