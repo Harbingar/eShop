@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
 import { SaleArticle, NewArticle, OutArticle} from "./statutArticle";
+import { ArticleData } from '../interface/topBestInterface';
 
-interface TopBestProps {
-  imgSrc: string;
-  productName: string;
-  price: string;
-  type: 'fruit' | 'vegetable';
-  status: 'best' | 'top';
-  stock: 'sale' | 'new' | 'out';
-}
 
-const SmallArticle: React.FC<TopBestProps> = ({ imgSrc, productName, price, status, stock }) => {
+const SmallArticle: React.FC<ArticleData> = ({ imgSrc, productName, price, status, stock }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const renderStockStatus = () => {
@@ -39,11 +32,11 @@ const SmallArticle: React.FC<TopBestProps> = ({ imgSrc, productName, price, stat
                 </div>
 
                 {isHovered && (
-                    <div className="absolute inset-0 flex flex-col items-center justify-evenly bg-black bg-opacity-80 transition-opacity">
-                        <button className="text-bestWhite text-3xl hover:text-bestGreen">
+                    <div className="absolute inset-0 flex flex-col items-center justify-evenly bg-black bg-opacity-90 transition-opacity">
+                        <button className="text-bestWhite text-3xl hover:underline">
                             See More
                         </button>
-                        <button className="text-bestGreen underline text-3xl hover:text-bestWhite">
+                        <button className="text-bestGreen text-3xl hover:underline">
                             Add to Cart
                         </button>
                     </div>

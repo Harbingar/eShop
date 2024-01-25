@@ -9,5 +9,5 @@ export const NewArticle = () => {
 };
 
 export const OutArticle = () => {
-  return <div className="bg-red-500 px-1 rounded-md text-white">Out of stock</div>;
+  return <div className="bg-red-500 px-2 rounded-md text-white">Out of stock</div>;
 };

@@ -6,6 +6,8 @@ import Hr from "./component/hr";
 import Offers from "./component/offers";
 import TopBest from "./component/topBest";
 import BlogSection from "./component/blogSection";
+import ShopSearch from "./component/shopSearch";
+import ProductCart from "./component/productCart";
 
 function App() {
 
@@ -19,6 +21,9 @@ function App() {
     <TopBest />
     <Hr/>
     <BlogSection/>
+    <Hr/>
+    <ShopSearch/>
+    <ProductCart/>
     <Footer/>
     </>
   )

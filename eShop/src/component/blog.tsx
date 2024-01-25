@@ -4,8 +4,8 @@ import {BlogProps} from "../interface/blogInterface";
 const blog: React.FC<BlogProps> = ({ imgSrc, Name, description}) => {
   return (
     <>
-        <div className="w-1/4 border-2 border-bestGreen flex flex-col items-center">
-            <img src={imgSrc} alt="blogImg" />
+        <div className="w-1/5 border-2 border-bestGreen flex flex-col rounded-md">
+            <img className="rounded-md" src={imgSrc} alt="blogImg" />
             <div className="flex flex-col p-3">
                 <div className="text-bestWhite text-4xl">
                     <h1>{Name}</h1>
