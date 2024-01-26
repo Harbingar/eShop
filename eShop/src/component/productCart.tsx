@@ -37,9 +37,9 @@ const ProductCart: React.FC = () => {
         </thead>
         <tbody className="text-bestWhite">
             {products.map(product => (
-            <tr key={product.id} className="mb-2 border-b border-bestWhite" style={{borderBottomWidth: '1px'}}>
+            <tr key={product.id} className="border-b border-bestWhite" style={{borderBottomWidth: '1px'}}>
                 <td className="w-1/2 px-5 flex items-center">
-                <img src={product.imageUrl} alt={product.title} className="h-10 w-10 mr-3 rounded" />
+                <img src={product.imageUrl} alt={product.title} className="h-14 w-14 mr-3 rounded" />
                 {product.title}
                 </td>
                 <td className="w-1/6 text-center">{product.price}$</td>

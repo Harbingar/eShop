@@ -30,6 +30,13 @@ module.exports = {
         'full': '9999px',
         'large': '12px',
       },
+      fontSize: {
+        'SortBy': ['0.8rem', {
+          lineHeight: '2rem',
+          letterSpacing: '-0.01em',
+          fontWeight: '500',
+        }],
+      }
     },
   },
   plugins: [],

@@ -3,30 +3,31 @@ import React from 'react';
 const shopSearch: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col items-center">
-        <img className="w-4/12" src="./shopSearch.png" alt="shopSearch" />
-        <div className="flex flex-row items-center justify-between">
-            <select name="sort" id="sort" className="w-1/3 bg-bestGreen text-bestBlack  rounded">
-                <option value="element3">News</option>
-                <option value="element1">Prix</option>
-                <option value="element2">Fruits</option>
-                <option value="element3">Vegetables</option>
-            </select>
-            <div className="w-1/12 h-full">
-
+      <div className="flex flex-col items-center m-5">
+        <div className="relative flex justify-center w-2/3">
+          <img className="w-1/2" src="./shopSearch.png" alt="shopSearch" />
+          <div className="absolute w-1/2 flex flex-row items-center justify-between" style={{ top: '80%', left: '25%' }}>
+            <div className="w-4/12 h-6 flex flex-row justify-between items-center bg-bestGreen text-bestBlack rounded">
+              <label htmlFor="sort" className="text-bestBlack text-SortBy text-center pl-1">Sort By:</label>
+              <select className="bg-bestGreen rounded max-w-min" name="sort" id="sort">
+                  <option value="null"></option>
+                  <option value="element1">News</option>
+                  <option value="element2">Prix</option>
+                  <option value="element3">Fruits</option>
+                  <option value="element4">Vegetables</option>
+              </select>
             </div>
-            <div className="w-6/12 flex flex-row">
-                <input type="search" placeholder="Search" className="bg-bestWhite rounded px-1"/>
-                    <button className="w-full">
-                        <img src="./loupe.png" alt="search" />
-                    </button>
-                    <button className="bg-bestGreen rounded-md w-full">
-                        <img src="./ligne.png" alt="ligne" />
-                    </button>
-
+            <div className="w-7/12 flex flex-row justify-end">
+                <input type="search" placeholder="Search" className="w-10/12 bg-bestWhite border-transparent rounded ml-4 px-1"/>
+                <button className="w-6 h-6 mx-1">
+                    <img src="./loupe.png" alt="search" />
+                </button>
+                <button className="bg-bestGreen rounded-md w-6 h-6">
+                    <img src="./ligne.png" alt="ligne" />
+                </button>
             </div>
+          </div>
         </div>
-
       </div>
     </>
   );

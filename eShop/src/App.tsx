@@ -7,7 +7,7 @@ import Offers from "./component/offers";
 import TopBest from "./component/topBest";
 import BlogSection from "./component/blogSection";
 import ShopSearch from "./component/shopSearch";
-import ProductCart from "./component/productCart";
+import CartSummary from "./component/cartSummary";
 
 function App() {
 
@@ -22,8 +22,8 @@ function App() {
     <Hr/>
     <BlogSection/>
     <Hr/>
-    {/*<ShopSearch/> */}
-    <ProductCart/>
+    <ShopSearch/>
+    <CartSummary/>
     <Footer/>
     </>
   )
