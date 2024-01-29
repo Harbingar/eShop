@@ -2,7 +2,7 @@ import React from 'react';
 
 const summary: React.FC = () => {
   return (
-    <div className='w-1/2 flex flex-col text-bestWhite'>
+    <div className='flex flex-col text-bestWhite'>
         <h1 className="text-3xl">Order Summary</h1>
         <div className="flex flex-col my-3">
             <div className="flex flex-row justify-between">

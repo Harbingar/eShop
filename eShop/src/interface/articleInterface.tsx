@@ -5,4 +5,5 @@ export interface ArticleData {
     type: 'fruit' | 'vegetable';
     status: 'best' | 'top';
     stock: 'sale' | 'new' | 'out';
+    description: string;
 }

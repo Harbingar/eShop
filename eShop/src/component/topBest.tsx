@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import TopBestTitle from './topBestTitle';
 import SmallArticle from './smallArticle';
-import { ArticleData } from '../interface/topBestInterface';
+import { ArticleData } from '../interface/articleInterface';
 
 const articlesData: ArticleData[] = [
-  { imgSrc: './img-pro-01.jpg', productName: 'Carrots', price: '$0.20', type: 'vegetable', status: 'top', stock: 'sale' },
-  { imgSrc: './img-pro-02.jpg', productName: 'Tomatoes', price: '$0.50', type: 'fruit', status: 'best', stock: 'new' },
-  { imgSrc: './img-pro-03.jpg', productName: 'Graps', price: '$3.50', type: 'fruit', status: 'best', stock: 'new' },
-  { imgSrc: './instagram-img-04.jpg', productName: 'Citron', price: '$0.99', type: 'fruit', status: 'top', stock: 'out' },
-  { imgSrc: './img-pro-04.jpg', productName: 'Papaya', price: '$10', type: 'fruit', status: 'best', stock: 'sale' },
-  { imgSrc: './instagram-img-05.jpg', productName: 'Cherry', price: '$0.10', type: 'fruit', status: 'top', stock: 'sale' },
-  { imgSrc: './instagram-img-06.jpg', productName: 'Orange', price: '$1', type: 'fruit', status: 'best', stock: 'sale' },
-  { imgSrc: './instagram-img-07.jpg', productName: 'Pumpkin', price: '$7', type: 'fruit', status: 'top', stock: 'sale' },
+  { imgSrc: './img-pro-01.jpg', productName: 'Carrots', price: '$0.20', type: 'vegetable', status: 'top', stock: 'sale', description:"" },
+  { imgSrc: './img-pro-02.jpg', productName: 'Tomatoes', price: '$0.50', type: 'fruit', status: 'best', stock: 'new', description:"" },
+  { imgSrc: './img-pro-03.jpg', productName: 'Graps', price: '$3.50', type: 'fruit', status: 'best', stock: 'new', description:"" },
+  { imgSrc: './instagram-img-04.jpg', productName: 'Citron', price: '$0.99', type: 'fruit', status: 'top', stock: 'out', description:"" },
+  { imgSrc: './img-pro-04.jpg', productName: 'Papaya', price: '$10', type: 'fruit', status: 'best', stock: 'sale', description:"" },
+  { imgSrc: './instagram-img-05.jpg', productName: 'Cherry', price: '$0.10', type: 'fruit', status: 'top', stock: 'sale', description:"" },
+  { imgSrc: './instagram-img-06.jpg', productName: 'Orange', price: '$1', type: 'fruit', status: 'best', stock: 'sale', description:"" },
+  { imgSrc: './instagram-img-07.jpg', productName: 'Pumpkin', price: '$7', type: 'fruit', status: 'top', stock: 'sale', description:"" },
 ];
 
 const App: React.FC = () => {
@@ -41,6 +41,7 @@ const App: React.FC = () => {
                                 type={article.type}
                                 status={article.status}
                                 stock={article.stock}
+                                description={article.description}
                             />
                         </div>
                     ))}

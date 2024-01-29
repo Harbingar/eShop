@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SaleArticle, NewArticle, OutArticle} from "./statutArticle";
-import { ArticleData } from '../interface/topBestInterface';
+import { ArticleData } from '../interface/articleInterface';
 
 
 const SmallArticle: React.FC<ArticleData> = ({ imgSrc, productName, price, status, stock }) => {

@@ -7,15 +7,19 @@ const coupon: React.FC = () => {
   return (
     <>
     <Cart/>
-    <div className="flex flex-row items-start justify-center mt-5">
-        <div className="p-5 flex justify-center">
-            <Coupon/>
-        </div>
-        <div className="p-5 flex justify-center">
-            <Summary/>
-        </div>
+    <div className="flex flex-col items-center">
         
+        <div className="w-3/4 flex flex-row items-start mt-10">
+            <div className="p-5 flex">
+                <Coupon/>
+            </div>
+            <div className="p-5 flex">
+                <Summary/>
+            </div>
+            
+        </div>
     </div>
+    
     </>
 
     
