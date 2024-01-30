@@ -20,60 +20,61 @@ const articlesData: ArticleData[] = [
 const VISIBLE_ARTICLES = 5;
 
 const Featured: React.FC = () => {
-const [startIndex, setStartIndex] = useState(0);
-const [direction, setDirection] = useState<'left' | 'right'>('right');
+    const [startIndex, setStartIndex] = useState(0);
+    const [leftButtonImg, setLeftButtonImg] = useState('./arrowLeft.png');
+    const [rightButtonImg, setRightButtonImg] = useState('./arrowRight.png');
 
-const visibleArticles = articlesData.slice(startIndex, startIndex + VISIBLE_ARTICLES);
+    const visibleArticles = articlesData.slice(startIndex, startIndex + VISIBLE_ARTICLES);
 
-const goLeft = () => {
-    if (startIndex > 0) {
-    setStartIndex(startIndex - 1);
-    setDirection('left');
-    }
-};
+    const goLeft = () => {
+        if (startIndex > 0) {
+            setStartIndex(startIndex - 1);
+        }
+    };
 
-const goRight = () => {
-    if (startIndex < articlesData.length - VISIBLE_ARTICLES) {
-    setStartIndex(startIndex + 1);
-    setDirection('right');
-    }
-};
+    const goRight = () => {
+        if (startIndex < articlesData.length - VISIBLE_ARTICLES) {
+            setStartIndex(startIndex + 1);
+        }
+    };
 
-const animation = useSpring({
-    from: {
-    opacity: 0,
-    transform: `translateX(${direction === 'left' ? '100%' : '-100%'})`,
-    },
-    to: {
-    opacity: 1,
-    transform: 'translateX(0)',
-    },
-    reset: true,
-});
-
-return (
-    <>
-    <div className="grid grid-cols-5 gap-4 mx-auto my-5">
-        {visibleArticles.map((article, index) => (
-        <animated.div key={index} className="flex justify-center" style={animation}>
-            <Article
-            imgSrc={article.imgSrc}
-            productName={article.productName}
-            price={article.price}
-            type={article.type}
-            status={article.status}
-            stock={article.stock}
-            description={article.description}
-            />
-        </animated.div>
-        ))}
-    </div>
-    <div className="flex justify-center space-x-4">
-        <button onClick={goLeft}>Précédent</button>
-        <button onClick={goRight}>Suivant</button>
-    </div>
-    </>
-);
+    return (
+        <>
+            <div className="grid grid-cols-5 gap-4 mx-auto my-5">
+                {visibleArticles.map((article, index) => (
+                    <div key={index} className="flex justify-center">
+                        <Article
+                            imgSrc={article.imgSrc}
+                            productName={article.productName}
+                            price={article.price}
+                            type={article.type}
+                            status={article.status}
+                            stock={article.stock}
+                            description={article.description}
+                        />
+                    </div>
+                ))}
+            </div>
+            <div className="flex justify-center my-5">
+                <button 
+                    className="flex justify-center" 
+                    onClick={goLeft}
+                    onMouseEnter={() => setLeftButtonImg('./arrowLeft2.png')}
+                    onMouseLeave={() => setLeftButtonImg('./arrowLeft.png')}
+                >
+                    <img className="w-1/3" src={leftButtonImg} alt="left" />
+                </button>
+                <button 
+                    className="flex justify-center" 
+                    onClick={goRight}
+                    onMouseEnter={() => setRightButtonImg('./arrowRight2.png')}
+                    onMouseLeave={() => setRightButtonImg('./arrowRight.png')}
+                >
+                    <img className="w-1/3" src={rightButtonImg} alt="right" />
+                </button>
+            </div>
+        </>
+    );
 }
 
 export default Featured;
