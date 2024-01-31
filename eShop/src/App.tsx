@@ -9,6 +9,8 @@ import BlogSection from "./component/blogSection";
 import CartSummary from "./component/cartSummary";
 import Shop from "./component/shop";
 import Product from "./component/product";
+import Account from "./component/account";
+
 
 function App() {
 
@@ -23,8 +25,10 @@ function App() {
     <Hr/>
     <BlogSection/>
     <Hr/>
+    <CartSummary/>
     <Shop/>
     <Product/>
+    <Account/>
     <Footer/>
     </>
   )

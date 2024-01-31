@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
 import Article from "./smallArticle";
 import { ArticleData } from '../interface/articleInterface';
 
