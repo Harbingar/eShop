@@ -10,6 +10,8 @@ import CartSummary from "./component/cartSummary";
 import Shop from "./component/shop";
 import Product from "./component/product";
 import Account from "./component/account";
+import Wishlist from "./component/wishList";
+import ContactForm from "./component/contactForm"
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
     <Shop/>
     <Product/>
     <Account/>
+    <Wishlist/>
+    <ContactForm/>
     <Footer/>
     </>
   )

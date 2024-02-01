@@ -8,7 +8,7 @@ const Article: React.FC = () => {
     <>
       <div className="w-full flex flex-row justify-center py-20">
         <div className="flex w-fit items-center flex-col">
-            <img className="w-3/4" src={currentImage} alt="product" />
+            <img className="w-3/4 rounded-lg" src={currentImage} alt="product" />
             <div className="flex justify-center mt-1">
                 {thumbnails.map((image, index) => (
                     <img

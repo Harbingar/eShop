@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Product } from '../interface/productInterface';
 
 const initialProducts: Product[] = [
-  { id: 1, title: 'Carrots', imageUrl: './img-pro-01.jpg', price: 1, quantity: 3 },
-  { id: 2, title: 'Tomatoes', imageUrl: './img-pro-02.jpg', price: 0.50, quantity: 3 },
-  { id: 3, title: 'Graps', imageUrl: './img-pro-03.jpg', price: 3.50, quantity: 3 },
-  { id: 4, title: 'Papaya', imageUrl: './img-pro-04.jpg', price: 7, quantity: 3 },
+  { id: 1, title: 'Carrots', imageUrl: './img-pro-01.jpg', price: 1, quantity: 3, stock: true },
+  { id: 2, title: 'Tomatoes', imageUrl: './img-pro-02.jpg', price: 0.50, quantity: 3, stock: true },
+  { id: 3, title: 'Graps', imageUrl: './img-pro-03.jpg', price: 3.50, quantity: 3, stock: true },
+  { id: 4, title: 'Papaya', imageUrl: './img-pro-04.jpg', price: 7, quantity: 3, stock: true },
 
 ];
 
