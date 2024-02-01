@@ -11,7 +11,8 @@ import Shop from "./component/shop";
 import Product from "./component/product";
 import Account from "./component/account";
 import Wishlist from "./component/wishList";
-import ContactForm from "./component/contactForm"
+import Contact from "./component/contact";
+
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     <Product/>
     <Account/>
     <Wishlist/>
-    <ContactForm/>
+    <Contact/>
     <Footer/>
     </>
   )

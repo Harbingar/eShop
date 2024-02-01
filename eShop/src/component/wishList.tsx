@@ -34,7 +34,8 @@ const Whishlist: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col items-center">
+      <img className="w-1/3 mb-10" src="./wishList.png" alt="WishlistTitle" />
       {showPopup && (
         <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-bestGreen text-bestWhite p-4 rounded">
           {popupMessage}
