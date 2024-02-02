@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Featured from "./featured";
+import Hr from "./hr";
 import { Product } from '../interface/productInterface';
 
 const initialProducts: Product[] = [
@@ -34,7 +36,7 @@ const Whishlist: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mb-10">
       <img className="w-1/3 mb-10" src="./wishList.png" alt="WishlistTitle" />
       {showPopup && (
         <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-bestGreen text-bestWhite p-4 rounded">
@@ -80,6 +82,8 @@ const Whishlist: React.FC = () => {
           ))}
         </tbody>
       </table>
+      <Hr/>
+      <Featured/>
     </div>
   );
 };

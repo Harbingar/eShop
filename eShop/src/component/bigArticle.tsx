@@ -1,5 +1,6 @@
 import { SaleArticle, NewArticle, OutArticle} from "./statutArticle";
 import { ArticleData } from '../interface/articleInterface';
+import { Link } from 'react-router-dom';
 
 const bigArticle: React.FC<ArticleData> = ({ imgSrc, productName, price, status, stock, description }) => {
 
@@ -34,7 +35,10 @@ const bigArticle: React.FC<ArticleData> = ({ imgSrc, productName, price, status,
                 </div>
                 <div className="flex flex-col justify-between mt-5">
                     <p className="text-bestWhite text-xl">{description}</p>
-                    <a className="text-bestGreen underline text-right text-2xl mt-2" href="#">Add to Card</a>
+                    <div className="flex flex-row justify-end">
+                        <Link className="text-bestWhite underline text-right text-2xl mt-2 px-3" to="/Product">See More</Link>
+                        <a className="text-bestGreen underline text-right text-2xl mt-2" href="#">Add to Card</a>
+                    </div>
                 </div>
                 
             </div>
