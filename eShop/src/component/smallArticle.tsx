@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SaleArticle, NewArticle, OutArticle} from "./statutArticle";
 import { ArticleData } from '../interface/articleInterface';
+import { Link } from 'react-router-dom';
 
 
 const SmallArticle: React.FC<ArticleData> = ({ imgSrc, productName, price, status, stock }) => {
@@ -34,7 +35,7 @@ const SmallArticle: React.FC<ArticleData> = ({ imgSrc, productName, price, statu
                 {isHovered && (
                     <div className="absolute inset-0 flex flex-col items-center justify-evenly bg-black bg-opacity-90 transition-opacity">
                         <button className="text-bestWhite text-3xl hover:underline">
-                            See More
+                            <Link to="/Product">See More</Link>
                         </button>
                         <button className="text-bestGreen text-3xl hover:underline">
                             Add to Cart

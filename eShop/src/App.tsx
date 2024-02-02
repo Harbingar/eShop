@@ -1,39 +1,29 @@
 import './font.css';
-import Nav from "./component/navBar";
-import Footer from "./component/footer";
-import Welcome from "./component/welcome";
-import Hr from "./component/hr";
-import Offers from "./component/offers";
-import TopBest from "./component/topBest";
-import BlogSection from "./component/blogSection";
-import CartSummary from "./component/cartSummary";
-import Shop from "./component/shop";
-import Product from "./component/product";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Cart from "./pages/cart";
+import Product from "./pages/product";
 import Account from "./component/account";
-import Wishlist from "./component/wishList";
-import ContactForm from "./component/contactForm"
+import Wishlist from './pages/wishlist';
+import Home from './pages/home';
+import Shop from './pages/shop';
+import Contact from './pages/contact';
+
 
 
 function App() {
 
   return (
     <>
-    <Nav/>
-    <Welcome/>
-    <Hr/>
-    <Offers/>
-    <Hr/>
-    <TopBest />
-    <Hr/>
-    <BlogSection/>
-    <Hr/>
-    <CartSummary/>
-    <Shop/>
-    <Product/>
-    <Account/>
-    <Wishlist/>
-    <ContactForm/>
-    <Footer/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Product" element={<Product />} />
+        <Route path="/Wishlist" element={<Wishlist />} />
+        <Route path="/Cart" element={<Cart />} />
+      </Routes>
+    </Router>
     </>
   )
 }
